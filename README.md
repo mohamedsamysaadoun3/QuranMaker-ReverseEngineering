@@ -11,7 +11,7 @@ Complete reverse engineering of the QuranMaker (NurMontage) v6.7.1 APK.
 - **05_Assets_COMPLETE/** - App assets (Arabic fonts, Quran translations, profiles)
 - **06_Raw_APK_Contents/** - Original DEX files and APK
 - **07_Analysis_Report/** - Comprehensive analysis report
-- **QuranMaker_signed.apk** - Rebuilt and signed APK
+- **QuranMaker_v6.7.1_resigned.apk** - Original APK re-signed (48 MB)
 
 ## App Info
 
@@ -21,7 +21,16 @@ Complete reverse engineering of the QuranMaker (NurMontage) v6.7.1 APK.
 - **Core Engine:** EngineActivity (video editing engine)
 - **Libraries:** FFmpeg Kit, Google Play Billing, Firebase, Material Design
 
-## Rebuilt APK
+## Re-signed APK
 
-The `QuranMaker_signed.apk` is a rebuilt version signed with a new keystore.
-Note: This APK will not work with Google Play Billing due to signature mismatch.
+The `QuranMaker_v6.7.1_resigned.apk` is the **original** APK with the signature replaced.
+This is NOT a rebuilt APK from smali - it's the original with a new signature.
+
+> ⚠️ Note: Google Play Billing will not work due to signature mismatch. You must uninstall the original app first before installing this one.
+
+## Installation
+
+1. Download `QuranMaker_v6.7.1_resigned.apk`
+2. Enable "Install from unknown sources" on your device
+3. Uninstall the original app if installed
+4. Install the re-signed APK
