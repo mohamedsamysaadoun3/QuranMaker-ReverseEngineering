@@ -1,0 +1,68 @@
+.class Lhazem/nurmontage/videoquran/SeettingActivity$2;
+.super Ljava/lang/Object;
+.source "SeettingActivity.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lhazem/nurmontage/videoquran/SeettingActivity;->onResume()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lhazem/nurmontage/videoquran/SeettingActivity;
+
+
+# direct methods
+.method constructor <init>(Lhazem/nurmontage/videoquran/SeettingActivity;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            null
+        }
+    .end annotation
+
+    .line 124
+    iput-object p1, p0, Lhazem/nurmontage/videoquran/SeettingActivity$2;->this$0:Lhazem/nurmontage/videoquran/SeettingActivity;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 1
+
+    .line 127
+    iget-object p1, p0, Lhazem/nurmontage/videoquran/SeettingActivity$2;->this$0:Lhazem/nurmontage/videoquran/SeettingActivity;
+
+    sget v0, Lhazem/nurmontage/videoquran/R$id;->progress:I
+
+    invoke-virtual {p1, v0}, Lhazem/nurmontage/videoquran/SeettingActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 128
+    iget-object p1, p0, Lhazem/nurmontage/videoquran/SeettingActivity$2;->this$0:Lhazem/nurmontage/videoquran/SeettingActivity;
+
+    invoke-static {p1}, Lhazem/nurmontage/videoquran/SeettingActivity;->-$$Nest$mrestoreSubscribe(Lhazem/nurmontage/videoquran/SeettingActivity;)V
+
+    return-void
+.end method
