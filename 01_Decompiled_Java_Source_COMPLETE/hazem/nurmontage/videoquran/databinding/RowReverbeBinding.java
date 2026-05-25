@@ -1,0 +1,54 @@
+package hazem.nurmontage.videoquran.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import hazem.nurmontage.videoquran.R;
+import hazem.nurmontage.videoquran.views.TextCustumFont;
+
+/* loaded from: classes2.dex */
+public final class RowReverbeBinding implements ViewBinding {
+    public final ImageView ivBtnPlay;
+    private final LinearLayout rootView;
+    public final TextCustumFont wordAya;
+
+    private RowReverbeBinding(LinearLayout linearLayout, ImageView imageView, TextCustumFont textCustumFont) {
+        this.rootView = linearLayout;
+        this.ivBtnPlay = imageView;
+        this.wordAya = textCustumFont;
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    public LinearLayout getRoot() {
+        return this.rootView;
+    }
+
+    public static RowReverbeBinding inflate(LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+
+    public static RowReverbeBinding inflate(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z) {
+        View inflate = layoutInflater.inflate(R.layout.row_reverbe, viewGroup, false);
+        if (z) {
+            viewGroup.addView(inflate);
+        }
+        return bind(inflate);
+    }
+
+    public static RowReverbeBinding bind(View view) {
+        int i = R.id.iv_btn_play;
+        ImageView imageView = (ImageView) ViewBindings.findChildViewById(view, i);
+        if (imageView != null) {
+            i = R.id.word_aya;
+            TextCustumFont textCustumFont = (TextCustumFont) ViewBindings.findChildViewById(view, i);
+            if (textCustumFont != null) {
+                return new RowReverbeBinding((LinearLayout) view, imageView, textCustumFont);
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i)));
+    }
+}
